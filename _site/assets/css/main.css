@@ -630,56 +630,77 @@ button:hover {
 
   .message {
     width: 657px; } }
-.posts {
-  padding-left: 16px;
-  padding-right: 16px; }
+.headroom {
+  margin: 1em; }
 
-#h1a {
-  text-decoration: none;
-  color: #2E2D33;
-  font-size: 64px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-  line-height: 1.2; }
+.cssgrid {
+  display: grid;
+  grid-gap: 1em;
+  /* set overall rows (10) and columns (2) */
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(11, 1fr);
+  /* 3 rows in viewport on load */
+  min-height: 333.33vh; }
 
-#h1a:hover {
-  color: #424247;
-  text-decoration: underline; }
+/* colors: https://color.adobe.com/Vintage-Ralph-Lauren-color-theme-2216979/ */
+.item {
+  /* text in box */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.posts:first-child {
-  padding-top: 60px; }
+.item.one {
+  background-color: #703030;
+  grid-row: span 10;
+  grid-column: span 2; }
 
-.posts {
-  text-align: left;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  padding-right: 10px; }
+.item.two {
+  background-color: #2f343b;
+  grid-row: span 2;
+  grid-column: span 3; }
 
-.posts p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px; }
+.item.three {
+  /* take up 2 rows */
+  grid-row: span 2;
+  grid-column: span 3;
+  background-color: #7e827a; }
 
-#date {
-  padding-top: 20px; }
+.item.four {
+  background-color: #e3cda4;
+  grid-row: span 2;
+  grid-column: span 3; }
 
-#readmore {
-  text-decoration: none;
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  padding-bottom: 20px; }
+.item.five {
+  background-color: #c77966;
+  grid-row: span 2;
+  grid-column: span 3; }
 
-@media only screen and (max-width: 640px) {
-  #h1a {
-    font-size: 34px; } }
-@media (min-width: 600px) {
-  .posts {
-    width: 680px; } }
-img {
-  max-width: 100%;
-  height: auto; }
+.item.six {
+  /* take up 2 rows 2 columns */
+  grid-row: span 2;
+  grid-column: span 3;
+  background-color: #703030; }
 
-.space1, .space2 {
-  padding: 6vh; }
+.item.seven {
+  background-color: #2f343b;
+  grid-row: span 2;
+  grid-column: span 3; }
+
+.item.eight {
+  background-color: #7e827a;
+  grid-row: span 2;
+  grid-column: span 3; }
+
+.item.nine {
+  grid-row: span 2;
+  grid-column: span 3;
+  background-color: #e3cda4; }
+
+.item.ten {
+  grid-row: span 2;
+  grid-column: span 3;
+  background-color: #c77966; }
 
 .banner {
   position: relative;
