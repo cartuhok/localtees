@@ -78,7 +78,7 @@
 @media (max-width: 700px) {
   .cssgrid {
     display: grid;
-    grid-gap: 2em;
+    grid-gap: .1em;
     /* set overall rows (10) and columns (2) */
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(3, 1fr);
