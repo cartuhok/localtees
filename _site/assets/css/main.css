@@ -426,8 +426,6 @@ ul, ol, dl, figure,
   z-index: 9999;
   padding: 18px;
   left: 0;
-  border-bottom: 3px solid #4879bd;
-  background: #4879bd;
   width: 100%;
   height: 5%; }
 
@@ -460,7 +458,8 @@ nav {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  z-index: 999; }
+  z-index: 999;
+  margin-top: -1em; }
 
 nav .logo {
   margin: 12vh 0;
@@ -633,6 +632,10 @@ button:hover {
 .headroom {
   margin: 1em; }
 
+.barNav {
+  display: none;
+  visibility: hidden; }
+
 .cssgrid {
   display: grid;
   grid-gap: 2em;
@@ -705,28 +708,16 @@ button:hover {
 @media (max-width: 700px) {
   .cssgrid {
     display: grid;
-    grid-gap: .1em;
+    grid-gap: 1em;
     /* set overall rows (10) and columns (2) */
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     /* 3 rows in viewport on load */
     min-height: 333.33vh; }
 
   .item.one {
     display: none;
-    visibility: hidden; }
-
-  .item.two {
-    grid-row: span 1;
-    grid-column: span 1; }
-
-  .item.three {
-    grid-row: span 1;
-    grid-column: span 1; }
-
-  .item.four {
-    grid-row: span 1;
-    grid-column: span 1; } }
+    visibility: hidden; } }
 .banner {
   position: relative;
   height: 70vh;

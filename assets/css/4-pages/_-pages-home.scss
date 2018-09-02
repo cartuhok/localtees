@@ -2,6 +2,11 @@
   margin: 1em;
 }
 
+.barNav {
+  display: none;
+  visibility: hidden;
+}
+
 .cssgrid {
   display: grid;
   grid-gap: 2em;
@@ -78,27 +83,16 @@
 @media (max-width: 700px) {
   .cssgrid {
     display: grid;
-    grid-gap: .1em;
+    grid-gap: 1em;
     /* set overall rows (10) and columns (2) */
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     /* 3 rows in viewport on load */
     min-height: 333.33vh;
   }
 .item.one {
   display: none;
   visibility: hidden;
-}
-.item.two {
-  grid-row: span 1;
-  grid-column: span 1;
-}
-.item.three {
-    grid-row: span 1;
-    grid-column: span 1;
-  }
-.item.four {
-      grid-row: span 1;
-      grid-column: span 1;
+
   }
 }
