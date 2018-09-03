@@ -21,15 +21,18 @@
 
 .item {
   /* text in box */
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 .item.one {
   background-color: #703030;
   grid-row: span 10;
   grid-column: span 2;
+  color: white;
+  display: flex;
+}
+
+.mission {
+  margin: .8em;
 }
 .item.two {
 
